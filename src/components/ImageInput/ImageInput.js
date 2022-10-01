@@ -1,23 +1,25 @@
-import React, {useState, useEffect, usRef, useRef} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import image from "../../images/gallery.png";
 import "./ImageInput.css";
 
 const ImageInput = () => {
-    const inputRef = useRef()
+    const inputRef = useRef();
     const [images, setImages] = useState([]);
     const [imageURLs, setImageURLs] = useState([[]]);
+    const imageRef = useRef();
 
     useEffect(()=>{
-        if(images.length <1) return;
+        if(images.length < 1) return;
         const newImageUrls = [];
         images.forEach(image => newImageUrls.push(URL.createObjectURL(image)));
         setImageURLs(newImageUrls);
     } ,[images])
 
-    const onImageChange = (event) =>{
+    const onImageChange = async (event) =>{
         setImages([...event.target.files]);
         console.log(event);
     }
+
     const handleChoose = () => {
         inputRef.current.click();
     }

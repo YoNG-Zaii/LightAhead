@@ -11,13 +11,13 @@ const AboutUs = () => {
         </div>
         <div className="content-box"> 
             <h2>About Us</h2>   
-            <p className="about-description">
+            <div className="about-description">
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui faucibus in ornare quam viverra. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Massa tincidunt nunc pulvinar sapien et ligula. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.</div>
                 <br></br>
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui faucibus in ornare quam viverra. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Massa tincidunt nunc pulvinar sapien et ligula. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque</div>
                 <br></br>
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui faucibus in ornare quam viverra. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Massa tincidunt nunc pulvinar sapien et ligula. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque</div>
-            </p>
+            </div>
         </div>
     </div>
 }

@@ -6,7 +6,7 @@ const HomePage = () => {
             <div className='TextBg'>
                 <div className='Text'>
                     <h1>LightAhead™</h1>
-                    <p>With it, the blind can see the world.</p>
+                    <p>The Vision for the Blind</p>
                 </div>
             </div>
             <img id='bgImg' 
