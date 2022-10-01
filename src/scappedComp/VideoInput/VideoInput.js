@@ -33,7 +33,7 @@ const VideoInput = (props) => {
           onChange={handleFileChange}
           accept=".mov,.mp4"
         />
-        {!source && <button className="btn" onClick={handleChoose}>Upload Video</button>}
+        {!source && <button className="videoBtn" onClick={handleChoose}>Upload Video</button>}
         {source && (
           <video
             className="VideoInput_video"

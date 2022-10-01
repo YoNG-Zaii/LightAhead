@@ -23,14 +23,14 @@
       line-height: 40px;
       text-align: center;
 }
-.btn{
+.videoBtn{
   border: 2px solid skyblue;
   border-radius: 5px;
   padding:  5px 20px;
   font-size: 1.2rem;
   margin: 20px;
 }
-.btn:hover{
+.videoBtn:hover{
   transition: 0.5s;
   cursor: pointer;
   color: white ;

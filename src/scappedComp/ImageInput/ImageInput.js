@@ -29,7 +29,7 @@ const ImageInput = () => {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
        <input className="imageInput" ref={inputRef} type="file" multiple accept="image/*" onChange={onImageChange} />
-       <button className="btn" onClick={handleChoose}>Upload Image</button>
+       <button className="imageBtn" onClick={handleChoose}>Upload Image</button>
     </div>
 }
 
