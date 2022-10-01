@@ -1,0 +1,15 @@
+.activateBtn{
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    padding:  5px 20px;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.activateBtn:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    color: white ;
+    background-color: blue;
+    border-color: blue;
+}

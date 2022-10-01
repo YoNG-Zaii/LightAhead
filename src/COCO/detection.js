@@ -3,6 +3,7 @@ import * as tf from "@tensorflow/tfjs";
 import * as cocossd from "@tensorflow-models/coco-ssd";
 import Webcam from "react-webcam";
 import drawRect from './utilities';
+import './detection.css';
 
 const DetectionModel = () => {
   const [activate, setActivate] = useState(false);
@@ -65,7 +66,8 @@ const DetectionModel = () => {
   if(activate)
   return (
     <div className="Model">
-        <button onClick={Activation}>Activate Detection Model</button>
+        <h2>Time to See the World</h2>
+        <button className='activateBtn' onClick={Activation}>Activate Detection Model</button>
         <br></br> 
           <Webcam
             ref={webcamRef}
@@ -102,7 +104,8 @@ const DetectionModel = () => {
   else
     return (
       <div className="Model">
-          <button onClick={Activation}>Activate Detection Model</button>
+          <h2>Time to See the World</h2>
+          <button className='activateBtn' onClick={Activation}>Activate Detection Model</button>
       </div>
     );
 }
