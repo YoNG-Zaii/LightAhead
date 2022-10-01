@@ -1,15 +1,18 @@
 import React, { useRef, useState, useEffect } from "react";
 import * as tf from "@tensorflow/tfjs";
 import * as cocossd from "@tensorflow-models/coco-ssd";
+import Speech from 'react-speech';
 import Webcam from "react-webcam";
 import drawRect from './utilities';
 import './detection.css';
 
 const DetectionModel = () => {
   const [activate, setActivate] = useState(false);
+  const [cameraFacing, setCameraFacing] = useState('Selfie');
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
   const predictions = useRef([]);
+  const lastPredict = useRef([]);
 
   // Main function
   const runCoco = async () => {
@@ -43,31 +46,63 @@ const DetectionModel = () => {
       canvasRef.current.height = videoHeight;
 
       // 4. TODO - Make Detections
-      const obj = await net.detect(video);
-      console.log(obj);
+      const objs = await net.detect(video);
+
+      // Predictions storage
+      objs.forEach((obj) => {
+        if(!predictions.current.includes(obj.class)){
+          predictions.current.push(obj.class);
+          console.log(predictions.current);
+        }
+      })
 
       // Draw mesh
       const ctx = canvasRef.current.getContext("2d");
 
       // 5. TODO - Update drawing utility
-      drawRect(obj, ctx);
+      drawRect(objs, ctx);
     }
   };
 
-  const Activation = () => {
+  const handleActivation = () => {
     setActivate(!activate)
   }
 
-  useEffect(()=>{
+  const handleCamera = () => {
+    if(cameraFacing === 'Selfie')
+      setCameraFacing('Environment')
+    else
+      setCameraFacing('Selfie')
+  }
+
+  const result = () => {
+    lastPredict.current = predictions.current;
     predictions.current = [];
+  }
+
+  const videoConstraints = {
+    width: 640,
+    height: 720,
+    facingMode: cameraFacing === 'Selfie'? 'user' : { exact: 'environment' }
+  };
+
+  useEffect(() => {
     runCoco();
-  },[]);
+  });
   
   if(activate)
   return (
-    <div className="Model">
+    <div className="model">
         <h2>Time to See the World</h2>
-        <button className='activateBtn' onClick={Activation}>Activate Detection Model</button>
+        <button className='activateBtn' onClick={handleActivation}>Deactivate Detection Model</button>
+        <button className='cameraBtn' onClick={handleCamera}>{'Current: '+cameraFacing+' Camera'}</button>
+        <button className='resultBtn' onClick={result}>Result</button>
+        <ul>
+          {lastPredict.current.map((obj) => {
+            return <li>{obj}</li>
+          })
+          }
+        </ul>
         <br></br> 
           <Webcam
             ref={webcamRef}
@@ -80,9 +115,8 @@ const DetectionModel = () => {
               right: 0,
               textAlign: "center",
               zindex: 9,
-              width: 640,
-              height: 480,
             }}
+            videoConstraints = {videoConstraints}
           />
 
           <canvas
@@ -103,9 +137,24 @@ const DetectionModel = () => {
   );
   else
     return (
-      <div className="Model">
-          <h2>Time to See the World</h2>
-          <button className='activateBtn' onClick={Activation}>Activate Detection Model</button>
+      <div className="model">
+          <h2 className='topic'>Time to See the World</h2>
+          <button className='activateBtn' onClick={handleActivation}>Activate Detection Model</button>
+          <button className='cameraBtn' onClick={handleCamera}>{'Current: '+cameraFacing+' Camera'}</button>
+          <button className='resultBtn' onClick={result}>Result</button>
+          <ul>
+          {lastPredict.current.map((obj) => {
+            return <li><Speech  
+            text={obj} 
+            textAsButton={true} 
+            pitch="1"
+            rate="1"
+            volume="1"
+            lang="en-GB"
+            voice="Daniel" /></li>
+          })
+          }
+          </ul>
       </div>
     );
 }

@@ -1,4 +1,9 @@
-.activateBtn{
+.model{
+    text-align: center;
+    width: 100%;
+}
+
+.activateBtn, .cameraBtn, .resultBtn{
     border: 2px solid skyblue;
     border-radius: 5px;
     padding:  5px 20px;
@@ -6,7 +11,7 @@
     margin: 20px;
 }
 
-.activateBtn:hover{
+.activateBtn:hover, .cameraBtn:hover, .resultBtn:hover{
     transition: 0.5s;
     cursor: pointer;
     color: white ;

@@ -42,7 +42,7 @@
     top: 0;
     width: 100%;
     height: 100vh;
-    animation: moveBG 10s linear infinite;
+    /* animation: moveBG 10s linear infinite; */
 }
 
 @keyframes moveBG{
