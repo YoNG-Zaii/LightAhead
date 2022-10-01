@@ -1,5 +1,6 @@
 import React from "react";
 import "./VideoInput.css";
+import video from "../../images/video.jpg"
 
 const VideoInput = (props) => {
   const { width, height } = props;
@@ -22,6 +23,9 @@ const VideoInput = (props) => {
   return (
     <div className="VideoInput">
         <h1 className="video-title">Upload Your Video here!</h1>
+        <img className="video-icon" src={video} alt=""/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         <input
           ref={inputRef}
           className="VideoInput_input"
@@ -29,7 +33,7 @@ const VideoInput = (props) => {
           onChange={handleFileChange}
           accept=".mov,.mp4"
         />
-        {!source && <button onClick={handleChoose}>Choose</button>}
+        {!source && <button className="btn" onClick={handleChoose}>Upload Video</button>}
         {source && (
           <video
             className="VideoInput_video"

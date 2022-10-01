@@ -1,11 +1,11 @@
 import './App.css';
-import HomePage from './HomePage';
+import HomePage from './components/HomePage';
 import Guide from './components/Guide/Guide';
 import AboutUs from './components/AboutUs/AboutUs';
 import VideoInput from './components/VideoInput/VideoInput';
 import ImageInput from './components/ImageInput/ImageInput';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <HomePage />

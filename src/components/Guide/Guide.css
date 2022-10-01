@@ -1,5 +1,7 @@
 .guide-box{
-    color: black;
+    color: white;
+    background-color: #101820FF;
+    padding-top: 20px;
 }
 .guide-title{
     text-decoration: underline;
@@ -10,22 +12,30 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 0 50px;
 }
 .image{
     width: 50vw;
-    
+}
+.youtube{
+    border-radius: 10%;
+}
+.youtube:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
 }
 .guide-description{
-    padding: 100px;
-}
-.guide-description h3{
-    color: black;
-    text-decoration: underline;
-    margin: 0;
+    padding: 50px;
+    padding-right: 100px;
     text-align: left;
+    color: white;
+}
+
+.guide-description h3{
+    text-decoration: underline;
+    margin: 50px 0 10px;
 }
 .guide-description p{
-    color: black;
-    margin: 10px;
-    margin-left: 0;
+    margin-top: 0;
 }

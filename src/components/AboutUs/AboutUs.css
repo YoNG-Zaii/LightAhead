@@ -1,5 +1,5 @@
 .about-box{
-    padding: 50px 0;
+    padding: 50px 0 0;
     display: flex;
 }
 .content-box{
@@ -22,7 +22,6 @@
 .about-image1{
     position: relative;
     width: 10vw;
-    /* bottom: 10px; */
     right: 30px;
 }
 .about-image2{
@@ -30,6 +29,14 @@
     left: 80px;
     width: 20vw;
     height: auto;
+}
+.about-image1:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.about-image2:hover{
+    transform: scale(1.1);
+    transition: 1s;
 }
 .about-description{
     color: black;

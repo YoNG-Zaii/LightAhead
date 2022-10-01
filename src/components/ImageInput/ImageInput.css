@@ -1,0 +1,29 @@
+.imageInput-box{
+    background-color: #101820FF;
+}
+.image-title{
+    color: white;
+    padding: 20px;
+}
+.image-icon{
+    width: 20vw;
+    padding: 20px;
+    border-radius: 30px;
+}
+.imageInput{
+    display: none;
+}
+.btn{
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    padding:  5px 20px;
+    font-size: 1.2rem;
+    margin: 20px;
+  }
+  .btn:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    color: white ;
+    background-color: blue;
+    border-color: blue;
+  }
