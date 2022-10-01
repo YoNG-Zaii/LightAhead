@@ -1,0 +1,36 @@
+.about-box{
+    padding: 50px 0;
+    display: flex;
+}
+.content-box{
+    color: black;
+    border-radius: 20px;
+    margin: 50px;
+    padding: 0;
+    text-align: left;
+    padding: 0 30px;
+}
+
+.about-title{
+    text-decoration: underline;
+    text-align: center;
+    padding: 20px;
+}
+.image-box{
+    padding: 50px 100px;
+}
+.about-image1{
+    position: relative;
+    width: 10vw;
+    /* bottom: 10px; */
+    right: 30px;
+}
+.about-image2{
+    position: relative;
+    left: 80px;
+    width: 20vw;
+    height: auto;
+}
+.about-description{
+    color: black;
+}

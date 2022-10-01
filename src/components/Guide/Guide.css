@@ -1,0 +1,31 @@
+.guide-box{
+    color: black;
+}
+.guide-title{
+    text-decoration: underline;
+    text-align: center;
+}
+.guide-box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.image{
+    width: 50vw;
+    
+}
+.guide-description{
+    padding: 100px;
+}
+.guide-description h3{
+    color: black;
+    text-decoration: underline;
+    margin: 0;
+    text-align: left;
+}
+.guide-description p{
+    color: black;
+    margin: 10px;
+    margin-left: 0;
+}
