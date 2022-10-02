@@ -1,6 +1,6 @@
-# LightAhead
+# Luminos™
 
-This project is about computer vision for blind communities in the world.
+Introducing Luminos™ - the computer vision tool for the visually impaired communities.
 
 # Getting Started with Create React App
 
