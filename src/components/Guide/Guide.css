@@ -2,6 +2,7 @@
     color: white;
     background-color: #583C2C;
     padding-top: 20px;
+    font-size: 1.4rem;
 }
 .guide-title{
     text-decoration: underline;
@@ -19,6 +20,8 @@
 }
 .youtube{
     border-radius: 10%;
+    width: 1000px;
+    height: 360px;
 }
 .youtube:hover{
     cursor: pointer;
@@ -38,4 +41,22 @@
 }
 .guide-description p{
     margin-top: 0;
+}
+
+@media screen and (max-width: 600px){
+    .guide-box2{
+        flex-direction: column;
+        padding: 80px 100px;
+    }
+    .guide-title{
+        text-align: center;
+    }
+    .guide-description{
+        text-align: center;
+        padding: 10px 50px;
+    }
+    .youtube{
+        margin: 40px 0;
+        width: 80vw;
+    }
 }
