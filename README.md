@@ -21,12 +21,12 @@ The blind communities have been relying on conventional methods such as blind ca
 
 ## 🧪 Tech
 
-The software prototype is a web application.<br>
-Front-end:<br>
-<code>ReactJS</code> for the components, styling and functions on the web application.
+Our software prototype is a web application.
+### Front-end:<br>
+[`ReactJS`](https://reactjs.org/) for the components, styling and functions on the web application.
 
-API:<br>
-<code>TensorflowJS</code> for the object detection model - [`COCO-SSD`](https://github.com/tensorflow/tfjs-models/blob/master/coco-ssd/README.md). [`COCO`](https://viso.ai/computer-vision/coco-dataset/) stands for Common Objects in Context by Microsoft, as the image dataset was created with the goal of advancing image recognition. [`SSD`](https://towardsdatascience.com/ssd-single-shot-detector-for-object-detection-using-multibox-1818603644ca#:~:text=Single%20Shot%20detector%20like%20YOLO,object%20detection%20models%20on%20VOC2007) stands for Single-Shot Multibox Detection and takes only one shot to detect multiple objects present in an image using multibox.<br>
+###API:<br>
+[`TensorflowJS`](https://www.tensorflow.org/js) for the object detection model - [`COCO-SSD`](https://github.com/tensorflow/tfjs-models/blob/master/coco-ssd/README.md). [`COCO`](https://viso.ai/computer-vision/coco-dataset/) stands for Common Objects in Context by Microsoft, as the image dataset was created with the goal of advancing image recognition. [`SSD`](https://towardsdatascience.com/ssd-single-shot-detector-for-object-detection-using-multibox-1818603644ca#:~:text=Single%20Shot%20detector%20like%20YOLO,object%20detection%20models%20on%20VOC2007) stands for Single-Shot Multibox Detection and takes only one shot to detect multiple objects present in an image using multibox.<br>
 It is significantly faster in speed and high-accuracy object detection algorithm. Through this web application, users can use their own camera-enabled devices to capture the video of their surroundings. The model will identify the objects inside the video. In particular, we want to focus the use of this application among the blind communities.
 
 
