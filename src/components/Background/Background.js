@@ -20,8 +20,8 @@ const Background = () => {
             <div className="background-content">
                 <div>
                     <h2>What are they facing?</h2>
-                    <h4>Problems in navigating around </h4>
-                    <p>Environmental Challenges
+                    <h4>Problems in navigating around - Environmental Challenges </h4>
+                    <p>
 Without any aid from technology or human assistance, the visually impaired must memorize the location of every obstacle or item in their home environment and not being able to see means that they have a difficult time navigating outside the spaces that they're accustomed to and are prone to accidents happening.</p>
                 </div>
             </div>
