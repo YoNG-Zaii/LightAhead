@@ -9,13 +9,20 @@
 ## ❓ Problem Statement
 The blind communities have been relying on conventional methods such as blind canes. What if they can 'see' the world through technology. That is the topic that we will address in this project.
 
-## :gift_heart: Our Solution - Luminos
+## :gift_heart: Our Solution
 *A web app that allows users to predict stock prices using LSTM and compare them to actual prices.* <br>
 
 #### Web App: https://luminos-project.vercel.app/
 #### Video Demo: https://www.youtube.com/watch?v=SKLymjKc8Ic
 
 ---
+
+
+
+
+
+
+
 
 *Problem Statement*: Current LSTM price prediction models can be easily thrown off by black swan events akin to Covid-19.
 
