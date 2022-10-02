@@ -1,74 +1,49 @@
-# Luminos™
+# 💡 Luminos™: A Vision for the Blind
+## MLDA DL Week 2022 Theme: AI and Smart Nation
+## 🤝 The Team
+ - [@blws02](https://github.com/blws02)
+ - [@YoNG-Zaii](https://github.com/YoNG-Zaii)
+ - [@Horstann](https://github.com/Horstann)
+ - [@Pratham117](https://github.com/Pratham117)
+ - [@SLAU925](https://github.com/SLAU925)
+ 
+---
 
-Introducing Luminos™ - the computer vision tool for the visually impaired communities.
+## ❓ Problem Statement
+Meet Sam. <br>
+His visual impairment makes it a pain in everyday life to navigate his own surroundings. <br>
+It gets all the more difficult when he’s all by himself, with no one to help him, exposing him to road hazards and physical injury.
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## :gift_heart: Our Solution
+What if there was a device that could help Sam detect objects around him in real-time and tells him what he’s looking at? <br>
+That is what our ML model does! <br>
+It identifies objects from a real time camera feed and reads out what they are. 
 
-## Available Scripts
+- #### [Web App](https://luminos-project.vercel.app/)
+- #### [Video Demo](https://www.youtube.com/shorts/pRgkEFUXJ0U)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🧪 Tech
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Our software prototype is a web application.
+### Front-end
+[`ReactJS`](https://reactjs.org/) was used for the components, styling and functions on the web application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### API
+[`TensorflowJS`](https://www.tensorflow.org/js) was used for the object detection model - [`COCO-SSD`](https://github.com/tensorflow/tfjs-models/blob/master/coco-ssd/README.md).<br><br>
+[`COCO`](https://viso.ai/computer-vision/coco-dataset/) stands for Common Objects in Context by Microsoft, as the image dataset was created with the goal of advancing image recognition.<br><br>
+[`SSD`](https://towardsdatascience.com/ssd-single-shot-detector-for-object-detection-using-multibox-1818603644ca#:~:text=Single%20Shot%20detector%20like%20YOLO,object%20detection%20models%20on%20VOC2007) stands for Single-Shot Multibox Detection and takes only one shot to detect multiple objects present in an image using multibox.<br><br>
+It is significantly faster in speed and high-accuracy object detection algorithm. Through this web application, users can use their own camera-enabled devices to capture the video of their surroundings. The model will identify the objects inside the video. In particular, we want to focus the use of this application among the blind communities.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙ How To Use
+1. First, navigate to [`Luminos™`](https://luminos-project.vercel.app/).
+2. Scroll to the 'Our Solution: Time to See the World' section.
+3. Activate the detection model. (Please provide permission to the browser for the use of webcam/camera)
+4. Choose your point of view (Front/rear camera).
+5. Scan around your surroundings.
+6. Select the 'Results' button.
+7. To get audio feedback, press the list of results.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
