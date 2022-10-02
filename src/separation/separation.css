@@ -1,0 +1,17 @@
+.separation1{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, #90ee90, #583C2C)
+}
+
+.separation2{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, #583C2C, #966D51)
+}
+
+.separation3{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, #966D51, #583C2C)
+}

@@ -1,5 +1,6 @@
 .problem-box{
-    color: black;
+    background: #966D51;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,7 +9,4 @@
 
 .problem-description{
     width: 50vw;
-}
-.problem-description p{
-    color: black;
 }

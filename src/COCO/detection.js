@@ -87,38 +87,6 @@ const DetectionModel = () => {
     facingMode: cameraFacing === 'Selfie'? 'user' : { exact: 'environment' }
   };
 
-  const style = {
-    container: { },
-    text: { },
-    buttons: { },
-    play: {
-      hover: {
-        backgroundColor: 'GhostWhite'
-      },
-      button: {
-        cursor: 'pointer',
-        outline: 'none',
-        backgroundColor: 'Gainsboro',
-        border: 'solid 1px rgba(255,255,255,1)',
-        borderRadius: 6
-      }
-    },
-    pause: {
-      play: { },
-      hover: { }
-    },
-    stop: {
-      play: { },
-      hover: { },
-      button: { }
-    },
-    resume: {
-      play: { },
-      hover: { },
-      button: { }
-    }
-  };
-
   useEffect(() => {
     runCoco();
   });
@@ -130,9 +98,9 @@ const DetectionModel = () => {
         <button className='activateBtn' onClick={handleActivation}>Deactivate Detection Model</button>
         <button className='cameraBtn' onClick={handleCamera}>{'Current: '+cameraFacing+' Camera'}</button>
         <button className='resultBtn' onClick={result}>Result</button>
+        <br></br>
         {lastPredict.current.map((obj) => {
             return <div><Speech 
-            style={style}
             text={obj} 
             textAsButton={true} 
             pitch="1"
@@ -181,18 +149,20 @@ const DetectionModel = () => {
           <button className='activateBtn' onClick={handleActivation}>Activate Detection Model</button>
           <button className='cameraBtn' onClick={handleCamera}>{'Current: '+cameraFacing+' Camera'}</button>
           <button className='resultBtn' onClick={result}>Result</button>
-          {lastPredict.current.map((obj) => {
-              return <div><Speech 
-              style={style}
-              text={obj} 
-              textAsButton={true} 
-              pitch="1"
-              rate="1"
-              volume="1"
-              lang="en-GB"
-              voice="Daniel" /></div>
-            })
-          }
+          <br></br>
+          <div className='list'>
+            {lastPredict.current.map((obj) => {
+                return <div><Speech 
+                text={obj} 
+                textAsButton={true} 
+                pitch="1"
+                rate="1"
+                volume="1"
+                lang="en-GB"
+                voice="Daniel" /></div>
+              })
+            }
+          </div>
       </div>
     );
 }
