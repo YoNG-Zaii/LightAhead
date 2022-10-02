@@ -1,0 +1,23 @@
+.background-box{
+    background-color: #101820FF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-content-box{
+    display: flex;
+    margin: 0;
+}
+.background-content{
+    text-align: left;
+    padding: 50px 60px;
+    max-width: 50vw;
+}
+.background-content h2{
+    color: white;
+}
+.image{
+    max-width: 45vw;
+    padding: 50px 20px;
+}
