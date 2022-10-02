@@ -1,5 +1,8 @@
 import "./Background.css";
 import blindComm from "../../images/blind_community.jpeg";
+import blind1 from "../../images/blind1.png";
+import blind2 from "../../images/blind2.png";
+
 
 const Background = () => {
     return <div className="background-box">
@@ -10,10 +13,10 @@ const Background = () => {
                     <p>In this day and age, having to deal with sight loss is one of the notable challenges that the visually impaired are facing when living life. Blind individuals are just like anyone else but they just can’t see. Becoming aware of objects within an environment or route can make it so much easier for a blind person to navigate around successfully. Therefore, our invention aims to help solve the problems that this community would be facing in manuevering around.</p>
                 </div>
             </div>
-            <img className="image" src={blindComm} alt=""/>
+            <img className="image" src={blind1} alt=""/>
         </div>
         <div className="bg-content-box">
-            <img className="image" src={blindComm} alt=""/>
+            <img className="image" src={blind2} alt=""/>
             <div className="background-content">
                 <div>
                     <h2>What are they facing?</h2>
