@@ -12,8 +12,8 @@ The blind communities have been relying on conventional methods such as blind ca
 ## :gift_heart: Our Solution
 *A web app that allows users to predict stock prices using LSTM and compare them to actual prices.* <br>
 
-#### Web App: https://luminos-project.vercel.app/
-#### Video Demo: https://www.youtube.com/watch?v=SKLymjKc8Ic
+- #### Web App: https://luminos-project.vercel.app/
+- #### Video Demo: https://www.youtube.com/watch?v=SKLymjKc8Ic
 
 ---
 
