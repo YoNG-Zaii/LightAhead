@@ -1,10 +1,10 @@
 # 💡 Luminos
 ## MLDA DL Week 2022 Theme: AI and Smart Nation
 
-Problem Statement: The blind communities have been relying on conventional methods such as blind canes. What if they can 'see' the world through technology. That is the topic that we will address in this project.
+## ❓ Problem Statement
+The blind communities have been relying on conventional methods such as blind canes. What if they can 'see' the world through technology. That is the topic that we will address in this project.
 
 
-# 📈 Stock Prediction App
 *A web app that allows users to predict stock prices using LSTM and compare them to actual prices.* <br>
 *View it [here](https://share.streamlit.io/rowentey/stock-price/main/app.py). Made by [@RowenTey](https://github.com/RowenTey) & [@Horstann](https://github.com/Horstann)*
 
