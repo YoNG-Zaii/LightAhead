@@ -78,12 +78,45 @@ const DetectionModel = () => {
   const result = () => {
     lastPredict.current = predictions.current;
     predictions.current = [];
+    setActivate(false);
   }
 
   const videoConstraints = {
     width: 640,
     height: 720,
     facingMode: cameraFacing === 'Selfie'? 'user' : { exact: 'environment' }
+  };
+
+  const style = {
+    container: { },
+    text: { },
+    buttons: { },
+    play: {
+      hover: {
+        backgroundColor: 'GhostWhite'
+      },
+      button: {
+        cursor: 'pointer',
+        outline: 'none',
+        backgroundColor: 'Gainsboro',
+        border: 'solid 1px rgba(255,255,255,1)',
+        borderRadius: 6
+      }
+    },
+    pause: {
+      play: { },
+      hover: { }
+    },
+    stop: {
+      play: { },
+      hover: { },
+      button: { }
+    },
+    resume: {
+      play: { },
+      hover: { },
+      button: { }
+    }
   };
 
   useEffect(() => {
@@ -97,12 +130,18 @@ const DetectionModel = () => {
         <button className='activateBtn' onClick={handleActivation}>Deactivate Detection Model</button>
         <button className='cameraBtn' onClick={handleCamera}>{'Current: '+cameraFacing+' Camera'}</button>
         <button className='resultBtn' onClick={result}>Result</button>
-        <ul>
-          {lastPredict.current.map((obj) => {
-            return <li>{obj}</li>
+        {lastPredict.current.map((obj) => {
+            return <div><Speech 
+            style={style}
+            text={obj} 
+            textAsButton={true} 
+            pitch="1"
+            rate="1"
+            volume="1"
+            lang="en-GB"
+            voice="Daniel" /></div>
           })
-          }
-        </ul>
+        }
         <br></br> 
           <Webcam
             ref={webcamRef}
@@ -142,19 +181,18 @@ const DetectionModel = () => {
           <button className='activateBtn' onClick={handleActivation}>Activate Detection Model</button>
           <button className='cameraBtn' onClick={handleCamera}>{'Current: '+cameraFacing+' Camera'}</button>
           <button className='resultBtn' onClick={result}>Result</button>
-          <ul>
           {lastPredict.current.map((obj) => {
-            return <li><Speech  
-            text={obj} 
-            textAsButton={true} 
-            pitch="1"
-            rate="1"
-            volume="1"
-            lang="en-GB"
-            voice="Daniel" /></li>
-          })
+              return <div><Speech 
+              style={style}
+              text={obj} 
+              textAsButton={true} 
+              pitch="1"
+              rate="1"
+              volume="1"
+              lang="en-GB"
+              voice="Daniel" /></div>
+            })
           }
-          </ul>
       </div>
     );
 }

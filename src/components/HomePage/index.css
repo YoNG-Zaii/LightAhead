@@ -62,3 +62,9 @@
         transform: translate(0);
     }
 }
+
+@media screen and (max-width: 600px){
+    .homepage{
+        display: none;
+    }
+}
