@@ -1,10 +1,11 @@
 # 💡 Luminos: A Vision for the Blind
 ## MLDA DL Week 2022 Theme: AI and Smart Nation
 ## 🤝 The Team
+ - [@blws02](https://github.com/blws02)
  - [@YoNG-Zaii](https://github.com/YoNG-Zaii)
  - [@Horstann](https://github.com/Horstann)
+ - [@Pratham117](https://github.com/Pratham117)
  - [@SLAU925](https://github.com/SLAU925)
- - [@blws02](https://github.com/blws02)
  
 ---
 
