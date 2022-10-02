@@ -5,7 +5,7 @@ const HomePage = () => {
         <div className='homepage'>
             <div className='TextBg'>
                 <div className='Text'>
-                    <h1>LightAhead™</h1>
+                    <h1>Luminos™</h1>
                     <p>A Vision for the Blind</p>
                     <div className='Team'>
                         <h3>Avengers Assemble</h3>

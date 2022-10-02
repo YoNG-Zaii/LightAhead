@@ -89,7 +89,7 @@ const DetectionModel = () => {
   const videoConstraints = {
     // width: 640,
     // height: 720,
-    width: 400,
+    width: 300,
     height: 600,
     facingMode: cameraFacing === 'Selfie'? 'user' : { exact: 'environment' }
   };
@@ -155,8 +155,8 @@ const DetectionModel = () => {
               zindex: 8,
               // width: 640,
               // height: 480
-              width: 400,
-              height: 500
+              width: 300,
+              height: 550
             }}
           />
     </div>
