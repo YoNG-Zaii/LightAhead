@@ -13,6 +13,7 @@ const DetectionModel = () => {
   const canvasRef = useRef(null);
   const predictions = useRef([]);
   const lastPredict = useRef([]);
+  const combinedPredict = useRef('');
 
   // Main function
   const runCoco = async () => {
@@ -77,13 +78,19 @@ const DetectionModel = () => {
 
   const result = () => {
     lastPredict.current = predictions.current;
+    combinedPredict.current = '';
+    for(let i = 0; i < lastPredict.current.length; i++){
+      combinedPredict.current += lastPredict.current[i] + ' ';
+    }
     predictions.current = [];
     setActivate(false);
   }
 
   const videoConstraints = {
-    width: 640,
-    height: 720,
+    // width: 640,
+    // height: 720,
+    width: 400,
+    height: 600,
     facingMode: cameraFacing === 'Selfie'? 'user' : { exact: 'environment' }
   };
 
@@ -99,6 +106,15 @@ const DetectionModel = () => {
         <button className='cameraBtn' onClick={handleCamera}>{'Current: '+cameraFacing+' Camera'}</button>
         <button className='resultBtn' onClick={result}>Result</button>
         <br></br>
+        <div><Speech 
+            text={combinedPredict.current} 
+            textAsButton={true} 
+            pitch="1"
+            rate="0.5"
+            volume="1"
+            lang="en-GB"
+            voice="Daniel" /></div>
+        <div className='list'>
         {lastPredict.current.map((obj) => {
             return <div><Speech 
             text={obj} 
@@ -110,6 +126,7 @@ const DetectionModel = () => {
             voice="Daniel" /></div>
           })
         }
+        </div>
         <br></br> 
           <Webcam
             ref={webcamRef}
@@ -136,8 +153,10 @@ const DetectionModel = () => {
               right: 0,
               textAlign: "center",
               zindex: 8,
-              width: 640,
-              height: 480,
+              // width: 640,
+              // height: 480
+              width: 400,
+              height: 500
             }}
           />
     </div>
@@ -150,6 +169,14 @@ const DetectionModel = () => {
           <button className='cameraBtn' onClick={handleCamera}>{'Current: '+cameraFacing+' Camera'}</button>
           <button className='resultBtn' onClick={result}>Result</button>
           <br></br>
+          <div><Speech 
+            text={combinedPredict.current} 
+            textAsButton={true} 
+            pitch="1"
+            rate="0.5"
+            volume="1"
+            lang="en-GB"
+            voice="Daniel" /></div>
           <div className='list'>
             {lastPredict.current.map((obj) => {
                 return <div><Speech 

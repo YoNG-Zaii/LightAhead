@@ -12,7 +12,6 @@ const App = () => {
   return (
     <div className="App">
       <HomePage />
-      <Separation1 />
       <Background />
       <Separation2 />
       <Problem />
