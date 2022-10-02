@@ -1,4 +1,4 @@
-# LightAhead
+# Luminos
 
 MLDA DL Week 2022 Theme: AI and Smart Nation
 
