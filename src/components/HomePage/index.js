@@ -18,7 +18,7 @@ const HomePage = () => {
                 </div>
             </div>
             <img id='bgImg' 
-            src='https://i.pcmag.com/imagery/articles/061CyMCZV6G2sXUmreKHvXS-1.fit_lim.v1581020108.jpg'
+            src='https://www.goodnewsnetwork.org/wp-content/uploads/2022/05/hand-on-hand-touch-public-domain-friendship-love-family-loss-gustavo-lanes-hkRA4mfoxEQ-unsplash.jpg'
             alt='CV'/>
         </div>
     )
