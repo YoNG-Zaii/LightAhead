@@ -8,7 +8,7 @@ import './detection.css';
 
 const DetectionModel = () => {
   const [activate, setActivate] = useState(false);
-  const [cameraFacing, setCameraFacing] = useState('Selfie');
+  const [cameraFacing, setCameraFacing] = useState('Front');
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
   const predictions = useRef([]);
@@ -70,10 +70,10 @@ const DetectionModel = () => {
   }
 
   const handleCamera = () => {
-    if(cameraFacing === 'Selfie')
-      setCameraFacing('Environment')
+    if(cameraFacing === 'Front')
+      setCameraFacing('Rear')
     else
-      setCameraFacing('Selfie')
+      setCameraFacing('Front')
   }
 
   const result = () => {
@@ -91,7 +91,7 @@ const DetectionModel = () => {
     // height: 720,
     width: 640,
     height: 720,
-    facingMode: cameraFacing === 'Selfie'? 'user' : { exact: 'environment' }
+    facingMode: cameraFacing === 'Front'? 'user' : { exact: 'environment' }
   };
 
   useEffect(() => {
