@@ -9,10 +9,15 @@
 ---
 
 ## ❓ Problem Statement
-The blind communities have been relying on conventional methods such as blind canes. What if they can 'see' the world through technology. That is the topic that we will address in this project.
+Meet Sam. <br>
+His visual impairment makes it a pain in everyday life to navigate his own surroundings. <br>
+It gets all the more difficult when he’s all by himself, with no one to help him, exposing him to road hazards and physical injury.
+
 
 ## :gift_heart: Our Solution
-*Helping the blind see the world through computer vision with external aid* <br>
+What if there was a device that could help Sam detect objects around him in real-time and tells him what he’s looking at? <br>
+That is what our ML model does! <br>
+It identifies objects from a real time camera feed and reads out what they are. 
 
 - #### Web App: https://luminos-project.vercel.app/
 - #### Video Demo: https://www.youtube.com/watch?v=SKLymjKc8Ic
@@ -30,23 +35,6 @@ Our software prototype is a web application.
 It is significantly faster in speed and high-accuracy object detection algorithm. Through this web application, users can use their own camera-enabled devices to capture the video of their surroundings. The model will identify the objects inside the video. In particular, we want to focus the use of this application among the blind communities.
 
 
-
-
-*Problem Statement*: Current LSTM price prediction models can be easily thrown off by black swan events akin to Covid-19.
-
-*Our Solution*: We hypothesise that black swan events are characterised by sudden spikes in trading volume. For example, when there is rapid buying or selling in a short amount of time. Our app provides a platform for students, professionals and enthusiasts alike to conveniently experiment with LSTM, and study the relationship between trade volume and the accuracy of LSTM predictions relative to actual prices.
-
-## 🧪 Tech
-
-This website is fully coded with Python. We utilised the [`Streamlit`](https://streamlit.io/) module as our web app's framework, given its simplicity and effectiveness in visualising data.
-
-As for our stock price data, we extracted it via the [`yfinance`](https://pypi.org/project/yfinance/) API.
-
-Data science libraries like, [`Numpy`](https://numpy.org/) and [`Pandas`](https://pandas.pydata.org/) helped us to pre-process and clean our data.
-
-The [`Matplotlib`](https://matplotlib.org/) and [`Seaborn`](https://seaborn.pydata.org/) libraries was later used to construct our time series charts to visualise our data.
-
-Finally, we used the LSTM prediction model to predict stock prices. Our LSTM was built using the machine learning libraries [`Keras`](https://keras.io/), [`Scikit-learn`](https://scikit-learn.org/stable/) and [`Tensorflow`](https://www.tensorflow.org/).
 
 
 ## 📁 Organisation
