@@ -7,6 +7,26 @@
     justify-content: center;
 }
 
+.problem-box h2{
+    font-size: 4em;
+    margin-block: 0.4em;
+}
+
 .problem-description{
-    width: 50vw;
+    width: 100%;
+    text-align: center;
+}
+
+.problem-description h3{
+    font-size: 2em;
+    padding-inline: 1em;
+}
+
+.problem-description p{
+    font-size: 1.8em;
+    padding-inline: 1.2em;
+}
+
+@media screen and (max-width: 600px){
+
 }
