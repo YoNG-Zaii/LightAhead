@@ -30,6 +30,8 @@ API:<br>
 It is significantly faster in speed and high-accuracy object detection algorithm. Through this web application, users can use their own camera-enabled devices to capture the video of their surroundings. The model will identify the objects inside the video. In particular, we want to focus the use of this application among the blind communities.
 
 
+
+
 *Problem Statement*: Current LSTM price prediction models can be easily thrown off by black swan events akin to Covid-19.
 
 *Our Solution*: We hypothesise that black swan events are characterised by sudden spikes in trading volume. For example, when there is rapid buying or selling in a short amount of time. Our app provides a platform for students, professionals and enthusiasts alike to conveniently experiment with LSTM, and study the relationship between trade volume and the accuracy of LSTM predictions relative to actual prices.
