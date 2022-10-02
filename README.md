@@ -20,7 +20,7 @@ That is what our ML model does! <br>
 It identifies objects from a real time camera feed and reads out what they are. 
 
 - #### Web App: https://luminos-project.vercel.app/
-- #### Video Demo: https://www.youtube.com/watch?v=SKLymjKc8Ic
+- #### Video Demo: https://www.youtube.com/shorts/pRgkEFUXJ0U
 
 ---
 
