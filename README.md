@@ -31,21 +31,17 @@ Our software prototype is a web application.
 [`ReactJS`](https://reactjs.org/) was used for the components, styling and functions on the web application.
 
 ### API
-[`TensorflowJS`](https://www.tensorflow.org/js) was used for the object detection model - [`COCO-SSD`](https://github.com/tensorflow/tfjs-models/blob/master/coco-ssd/README.md). [`COCO`](https://viso.ai/computer-vision/coco-dataset/) stands for Common Objects in Context by Microsoft, as the image dataset was created with the goal of advancing image recognition. [`SSD`](https://towardsdatascience.com/ssd-single-shot-detector-for-object-detection-using-multibox-1818603644ca#:~:text=Single%20Shot%20detector%20like%20YOLO,object%20detection%20models%20on%20VOC2007) stands for Single-Shot Multibox Detection and takes only one shot to detect multiple objects present in an image using multibox.<br>
+[`TensorflowJS`](https://www.tensorflow.org/js) was used for the object detection model - [`COCO-SSD`](https://github.com/tensorflow/tfjs-models/blob/master/coco-ssd/README.md).<br><br>
+[`COCO`](https://viso.ai/computer-vision/coco-dataset/) stands for Common Objects in Context by Microsoft, as the image dataset was created with the goal of advancing image recognition.<br><br>
+[`SSD`](https://towardsdatascience.com/ssd-single-shot-detector-for-object-detection-using-multibox-1818603644ca#:~:text=Single%20Shot%20detector%20like%20YOLO,object%20detection%20models%20on%20VOC2007) stands for Single-Shot Multibox Detection and takes only one shot to detect multiple objects present in an image using multibox.<br><br>
 It is significantly faster in speed and high-accuracy object detection algorithm. Through this web application, users can use their own camera-enabled devices to capture the video of their surroundings. The model will identify the objects inside the video. In particular, we want to focus the use of this application among the blind communities.
 
 
-
-
-## 📁 Organisation
-
-- [.streamlit/](https://github.com/Horstann/Stock-Prediction-App/tree/main/.streamlit) contains the front-end configurations of our web app
-- [app.py](https://github.com/Horstann/Stock-Prediction-App/blob/main/app.py) contains the Python code of our Streamlit framework, LSTM prediction model and data visualisation
-- [requirements.txt](https://github.com/Horstann/Stock-Prediction-App/blob/main/requirements.txt) contains all the libraries and modules required to execute our web app, alongside their respective versions
-
 ## ⚙ How To Use
-1. First, type in the **ticker** symbol you're looking for.
-2. If it is a valid ticker symbol, the app will display a full description of the stock and its interactive time series chart.
-3. Next, click the arrow icon on the top left corner. This opens up a sidebar. Select the date you 3. wish to start predicting the stock price from.
-4. Give a moment for the model to process your input.
-5. And that's it! The prediction will appear magically before your eyes. It's that **easy**!
+1. First, navigate to [`Luminos™`](https://luminos-project.vercel.app/).
+2. Scroll to the 'Our Solution: Time to See the World' section.
+3. Activate the detection model. (Please provide permission to the browser for the use of webcam/camera)
+4. Choose your point of view (Front/rear camera).
+5. Scan around your surroundings.
+6. Select the 'Results' button.
+7. To get audio feedback, press the list of results.
