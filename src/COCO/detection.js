@@ -106,7 +106,7 @@ const DetectionModel = () => {
         <button className='cameraBtn' onClick={handleCamera}>{'Current: '+cameraFacing+' Camera'}</button>
         <button className='resultBtn' onClick={result}>Result</button>
         <br></br>
-        <div><Speech 
+        {combinedPredict.current.length !== 0 && <div><Speech 
             text={combinedPredict.current} 
             textAsButton={true} 
             pitch="1"
@@ -114,6 +114,7 @@ const DetectionModel = () => {
             volume="1"
             lang="en-GB"
             voice="Daniel" /></div>
+        }
         <div className='list'>
         {lastPredict.current.map((obj) => {
             return <div><Speech 
@@ -169,7 +170,7 @@ const DetectionModel = () => {
           <button className='cameraBtn' onClick={handleCamera}>{'Current: '+cameraFacing+' Camera'}</button>
           <button className='resultBtn' onClick={result}>Result</button>
           <br></br>
-          <div><Speech 
+          {combinedPredict.current.length !== 0 && <div><Speech 
             text={combinedPredict.current} 
             textAsButton={true} 
             pitch="1"
@@ -177,6 +178,7 @@ const DetectionModel = () => {
             volume="1"
             lang="en-GB"
             voice="Daniel" /></div>
+          }
           <div className='list'>
             {lastPredict.current.map((obj) => {
                 return <div><Speech 

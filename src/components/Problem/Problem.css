@@ -1,6 +1,6 @@
 .problem-box{
     background: #966D51;
-    color: white;
+    color: #FEFEFA;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,10 +23,6 @@
 }
 
 .problem-description p{
-    font-size: 1.3em;
+    font-size: 1.4em;
     padding-inline: 1.5em;
-}
-
-@media screen and (max-width: 600px){
-
 }

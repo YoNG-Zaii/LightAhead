@@ -1,0 +1,20 @@
+.Solution{
+    background: #583C2C;
+    text-align: center;
+}
+
+.Solution h2, p{
+    color: #FEFEFA;
+}
+
+.Solution h2{
+    font-size: 3em;
+    margin: 0;
+    padding: 0.5em 0.8em;
+}
+
+.Solution p{
+    font-size: 1.5em;
+    margin: 0;
+    padding: 1em 0.8em;
+}

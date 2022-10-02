@@ -4,7 +4,7 @@ const Home = () => {
     return <div className="guide-box">
         <div className="guide-box2">
             <div className="guide-description">
-                <h1>Demoooooooo!!!</h1>
+                <h1>Demo of Luminos™</h1>
                 <h3>Step 1</h3>
                 <p>Activate the Detection Model.</p>
                 <h3>Step 2</h3>

@@ -4,7 +4,7 @@ import Guide from './components/Guide/Guide';
 import DetectionModel from './COCO/detection';
 import Problem from './components/Problem/Problem';
 import Background from './components/Background/Background';
-import Separation1 from './separation/separation1';
+import Solution from './components/Solution';
 import Separation2 from './separation/separation2';
 import Separation3 from './separation/separation3';
 
@@ -16,8 +16,10 @@ const App = () => {
       <Separation2 />
       <Problem />
       <Separation3 />
-      <Guide />
+      <Solution />
       <Separation2 />
+      <Guide />
+      <Separation3 />
       <DetectionModel />
     </div>
   );

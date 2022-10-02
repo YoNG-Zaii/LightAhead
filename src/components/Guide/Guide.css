@@ -1,13 +1,8 @@
 .guide-box{
-    color: white;
-    background-color: #583C2C;
-    padding-top: 20px;
-    font-size: 1.4rem;
+    color: #FEFEFA;
+    background-color: #966D51;
 }
-.guide-title{
-    text-decoration: underline;
-    text-align: center;
-}
+
 .guide-box2{
     display: flex;
     align-items: center;
@@ -15,48 +10,53 @@
     text-align: center;
     padding: 0 50px;
 }
-.image{
-    width: 50vw;
-}
+
 .youtube{
-    border-radius: 10%;
-    width: 1000px;
-    height: 360px;
+    border-radius: 2em;
+    width: 400px;
+    height: 300px;
 }
+
 .youtube:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 1s;
 }
+
 .guide-description{
     padding: 50px;
     padding-right: 100px;
     text-align: left;
-    color: white;
+}
+
+.guide-description h1{
+    font-size: 3em;
 }
 
 .guide-description h3{
+    margin-bottom: 0.5em;
     text-decoration: underline;
-    margin: 50px 0 10px;
-}
-.guide-description p{
-    margin-top: 0;
+    font-size: 2em;
 }
 
-@media screen and (max-width: 600px){
+.guide-description p{
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 850px){
     .guide-box2{
         flex-direction: column;
-        padding: 80px 100px;
     }
-    .guide-title{
-        text-align: center;
-    }
+
     .guide-description{
         text-align: center;
         padding: 10px 50px;
     }
+
     .youtube{
         margin: 40px 0;
-        width: 80vw;
+        width: 70vw;
+        height: 55vw;
     }
 }
