@@ -19,8 +19,8 @@ What if there was a device that could help Sam detect objects around him in real
 That is what our ML model does! <br>
 It identifies objects from a real time camera feed and reads out what they are. 
 
-- #### Web App: https://luminos-project.vercel.app/
-- #### Video Demo: https://www.youtube.com/shorts/pRgkEFUXJ0U
+- #### [Web App](https://luminos-project.vercel.app/)
+- #### [Video Demo](https://www.youtube.com/shorts/pRgkEFUXJ0U)
 
 ---
 
