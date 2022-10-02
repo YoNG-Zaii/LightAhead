@@ -2,7 +2,8 @@
 ## MLDA DL Week 2022 Theme: AI and Smart Nation
 
 ## 🤝 The Team\
-  [@YoNG-Zaii](https://github.com/YoNG-Zaii)  [@Horstann](https://github.com/Horstann)  
+ - [@YoNG-Zaii](https://github.com/YoNG-Zaii)
+ - [@Horstann](https://github.com/Horstann)
 
 
 ## ❓ Problem Statement
