@@ -8,7 +8,7 @@
 }
 
 .problem-box h2{
-    font-size: 4em;
+    font-size: 3em;
     margin-block: 0.4em;
 }
 
@@ -23,8 +23,8 @@
 }
 
 .problem-description p{
-    font-size: 1.8em;
-    padding-inline: 1.2em;
+    font-size: 1.3em;
+    padding-inline: 1.5em;
 }
 
 @media screen and (max-width: 600px){
