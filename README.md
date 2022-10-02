@@ -9,12 +9,10 @@
 ## ❓ Problem Statement
 The blind communities have been relying on conventional methods such as blind canes. What if they can 'see' the world through technology. That is the topic that we will address in this project.
 
-## :gift_heart: Our Solution
-
-
+## :gift_heart: Our Solution - Luminos
 *A web app that allows users to predict stock prices using LSTM and compare them to actual prices.* <br>
-*View it [here](https://share.streamlit.io/rowentey/stock-price/main/app.py). Made by [@RowenTey](https://github.com/RowenTey) & [@Horstann](https://github.com/Horstann)*
 
+#### Web App: https://luminos-project.vercel.app/
 #### Video Demo: https://www.youtube.com/watch?v=SKLymjKc8Ic
 
 ---
