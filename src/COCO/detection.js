@@ -89,8 +89,8 @@ const DetectionModel = () => {
   const videoConstraints = {
     // width: 640,
     // height: 720,
-    width: 300,
-    height: 600,
+    width: 640,
+    height: 720,
     facingMode: cameraFacing === 'Selfie'? 'user' : { exact: 'environment' }
   };
 
@@ -101,7 +101,7 @@ const DetectionModel = () => {
   if(activate)
   return (
     <div className="model">
-        <h2>Time to See the World</h2>
+        <h2>Our Solution: Time to See the World</h2>
         <button className='activateBtn' onClick={handleActivation}>Deactivate Detection Model</button>
         <button className='cameraBtn' onClick={handleCamera}>{'Current: '+cameraFacing+' Camera'}</button>
         <button className='resultBtn' onClick={result}>Result</button>
@@ -155,8 +155,8 @@ const DetectionModel = () => {
               zindex: 8,
               // width: 640,
               // height: 480
-              width: 300,
-              height: 550
+              width: 640,
+              height: 480
             }}
           />
     </div>
@@ -164,7 +164,7 @@ const DetectionModel = () => {
   else
     return (
       <div className="model">
-          <h2 className='topic'>Time to See the World</h2>
+          <h2 className='topic'>Our Solution: Time to See the World</h2>
           <button className='activateBtn' onClick={handleActivation}>Activate Detection Model</button>
           <button className='cameraBtn' onClick={handleCamera}>{'Current: '+cameraFacing+' Camera'}</button>
           <button className='resultBtn' onClick={result}>Result</button>
