@@ -15,7 +15,7 @@ const Home = () => {
                 <p>Select the "Results" button.<br></br>
                 To get audio feedback, press the list of results.</p>
             </div>
-            <iframe  className="youtube" src="https://www.youtube-nocookie.com/embed/0yZcDeVsj_Y" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+            <button className='videoBtn'><a href='https://www.youtube.com/shorts/pRgkEFUXJ0U'>Watch the Demo Video</a></button>
         </div>
     </div>
 }   

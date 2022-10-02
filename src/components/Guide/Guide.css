@@ -11,16 +11,22 @@
     padding: 0 50px;
 }
 
-.youtube{
-    border-radius: 2em;
-    width: 400px;
-    height: 300px;
+.videoBtn{
+    padding: 1em 1em;
+    background: #101820FF;
+    transition: 0.5s;
+    border-radius: 1em;
 }
 
-.youtube:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: 1s;
+.videoBtn a{
+    text-decoration: none;
+    color: #FEFEFA;
+    font-size: 1.5em;
+}
+
+.videoBtn:hover{
+    box-shadow: 0 0 0 2px #FEFEFA;
+    transform: translateY(5px);
 }
 
 .guide-description{
@@ -52,11 +58,5 @@
     .guide-description{
         text-align: center;
         padding: 10px 50px;
-    }
-
-    .youtube{
-        margin: 40px 0;
-        width: 70vw;
-        height: 55vw;
     }
 }
