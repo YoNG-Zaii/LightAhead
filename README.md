@@ -1,7 +1,7 @@
 # 💡 Luminos
 ## MLDA DL Week 2022 Theme: AI and Smart Nation
 
-## 🤝 The Team\
+## 🤝 The Team
  - [@YoNG-Zaii](https://github.com/YoNG-Zaii)
  - [@Horstann](https://github.com/Horstann)
 
@@ -16,10 +16,6 @@ The blind communities have been relying on conventional methods such as blind ca
 #### Video Demo: https://www.youtube.com/watch?v=SKLymjKc8Ic
 
 ---
-
-## ❓ Assignment
-
-Being interested in data science and the financial markets, we were interested in how predictive models are applied in forecasting the stock market. So this project allowed us to dive deeper into this topic. The particular model we examined was called the Long Short-Term Memory or LSTM.
 
 *Problem Statement*: Current LSTM price prediction models can be easily thrown off by black swan events akin to Covid-19.
 
