@@ -1,4 +1,4 @@
-# 💡 Luminos
+# 💡 Luminos: A Vision for the Blind
 ## MLDA DL Week 2022 Theme: AI and Smart Nation
 ## 🤝 The Team
  - [@YoNG-Zaii](https://github.com/YoNG-Zaii)
@@ -12,18 +12,22 @@
 The blind communities have been relying on conventional methods such as blind canes. What if they can 'see' the world through technology. That is the topic that we will address in this project.
 
 ## :gift_heart: Our Solution
-*A web app that allows users to predict stock prices using LSTM and compare them to actual prices.* <br>
+*Helping the blind see the world through computer vision with external aid* <br>
 
 - #### Web App: https://luminos-project.vercel.app/
 - #### Video Demo: https://www.youtube.com/watch?v=SKLymjKc8Ic
 
 ---
 
+## 🧪 Tech
 
+The software prototype is a web application.<br>
+Front-end:<br>
+<code>ReactJS</code> for the components, styling and functions on the web application.
 
-
-
-
+API:<br>
+<code>TensorflowJS</code> for the object detection model - <a href='https://github.com/tensorflow/tfjs-models/blob/master/coco-ssd/README.md'>COCO-SSD</a>. <a href='https://viso.ai/computer-vision/coco-dataset/'>COCO</a> stands for Common Objects in Context by Microsoft, as the image dataset was created with the goal of advancing image recognition. <a href='https://towardsdatascience.com/ssd-single-shot-detector-for-object-detection-using-multibox-1818603644ca#:~:text=Single%20Shot%20detector%20like%20YOLO,object%20detection%20models%20on%20VOC2007'>SSD</a> stands for Single-Shot Multibox Detection and takes only one shot to detect multiple objects present in an image using multibox.<br>
+It is significantly faster in speed and high-accuracy object detection algorithm. Through this web application, users can use their own camera-enabled devices to capture the video of their surroundings. The model will identify the objects inside the video. In particular, we want to focus the use of this application among the blind communities.
 
 
 *Problem Statement*: Current LSTM price prediction models can be easily thrown off by black swan events akin to Covid-19.
