@@ -1,5 +1,4 @@
 import "./Background.css";
-import blindComm from "../../images/blind_community.jpeg";
 import blind1 from "../../images/blind1.png";
 import blind2 from "../../images/blind2.png";
 
